@@ -41,7 +41,7 @@ setupCamera()
 time.sleep(2)
 print("GO")
 
-while imgNum <= 50:
+while imgNum <= 50:  # 50 is an arbitrary number used for testing purposes
     img = pyautogui.screenshot()
     key = keymap[keyboard.read_key()]
     images[imgNum] = np.array(img)
